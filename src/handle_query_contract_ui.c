@@ -84,7 +84,28 @@ void handle_query_contract_ui(ethQueryContractUI_t *msg) {
             ret = set_receive_ui(msg, context);
             break;
         case 2:
-            ret = set_beneficiary_ui(msg, context);
+            strlcpy(msg->title, "Foo", msg->titleLength);
+            ret = true;
+            break;
+        case 3:
+            strlcpy(msg->title, "Bar", msg->titleLength);
+            ret = true;
+            break;
+        case 4:
+            strlcpy(msg->title, "Zoo", msg->titleLength);
+            ret = true;
+            break;
+        case 5:
+            strlcpy(msg->title, "Agg", msg->titleLength);
+            ret = true;
+            break;
+        case 6:
+            strlcpy(msg->title, "Koo", msg->titleLength);
+            ret = true;
+            break;
+        case 7:
+            strlcpy(msg->title, "Yoo", msg->titleLength);
+            ret = true;
             break;
         // Keep this
         default:
